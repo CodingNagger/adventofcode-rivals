@@ -16,10 +16,10 @@
     },
     "devDependencies": {
         "@types/jest": "^26.0.14",
-        "aws-sdk": "^2.575.0",
+        "aws-sdk": "^2.766.0",
         "jest": "^26.4.2",
         "nock": "^11.7.0",
         "ts-jest": "^26.4.1",
-        "typescript": "^3.7.2"
+        "typescript": "^4.0.3"
     }
 }
