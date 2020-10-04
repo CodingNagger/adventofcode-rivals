@@ -1,0 +1,42 @@
+service: adventofcode-rivals
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  stage: dev
+  region: eu-west-2
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - s3:GetObject
+        - s3:PutObject
+      Resource: "arn:aws:s3:::${self:custom.configBucket}/*"
+
+custom:
+  configBucket: "adventofcode-rivals-${self:provider.stage}"
+
+functions:
+  stats:
+    handler: dist/stats.handler
+    events:
+      - http:
+          path: stats/{year}
+          method: GET
+          cors: true
+          request:
+            parameters:
+              paths:
+                year: true
+  update:
+    handler: dist/update.handler
+    events:
+      - http:
+          path: update/{year}
+          method: POST
+          cors: true
+          request:
+            parameters:
+              paths:
+                year: true
+      - schedule:
+          rate: rate(2 hours)

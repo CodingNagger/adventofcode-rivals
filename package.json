@@ -1,0 +1,25 @@
+{
+    "name": "adventofcode-rivals",
+    "repository": {
+        "url": "https://github.com/CodingNagger/adventofcode-rivals"
+    },
+    "license": "GPL-3.0",
+    "scripts": {
+        "build": "tsc && npm run copyconfig",
+        "test": "jest --coverage",
+        "copyconfig": "cp config.json dist/config.json",
+        "deploy": "npm run build && sls deploy"
+    },
+    "dependencies": {
+        "@types/aws-lambda": "^8.10.36",
+        "@types/node": "^12.12.11"
+    },
+    "devDependencies": {
+        "@types/jest": "^24.0.23",
+        "aws-sdk": "^2.575.0",
+        "jest": "^24.9.0",
+        "nock": "^11.7.0",
+        "ts-jest": "^24.2.0",
+        "typescript": "^3.7.2"
+    }
+}
