@@ -6,10 +6,10 @@ describe("TextStatsPresenter", () => {
         const yearStats = {
             year: 2018,
             rivals: [
-                { "name": nameA, "stars": 0, "membersCount": 1, "starsPerMember": 0 },
-                { "name": nameB, "stars": 90, "membersCount": 2, "starsPerMember": 45 },
-                { "name": nameC, "stars": 30, "membersCount": 3, "starsPerMember": 10 },
-                { "name": nameD, "stars": 60, "membersCount": 4, "starsPerMember": 15 }
+                { "name": nameA, "stars": 0, "membersCount": 1, "starsPerMember": 0, "median": 0  },
+                { "name": nameB, "stars": 90, "membersCount": 2, "starsPerMember": 45, "median": 0  },
+                { "name": nameC, "stars": 30, "membersCount": 3, "starsPerMember": 10, "median": 0  },
+                { "name": nameD, "stars": 60, "membersCount": 4, "starsPerMember": 15, "median": 0  }
             ],
         };
 
@@ -26,10 +26,10 @@ describe("TextStatsPresenter", () => {
         const yearStats = {
             year: 2018,
             rivals: [
-                { "name": nameA, "stars": 12, "membersCount": 1, "starsPerMember": 12 },
-                { "name": nameB, "stars": 12, "membersCount": 3, "starsPerMember": 4 },
-                { "name": nameC, "stars": 12, "membersCount": 4, "starsPerMember": 3 },
-                { "name": nameD, "stars": 12, "membersCount": 2, "starsPerMember": 6 }
+                { "name": nameA, "stars": 12, "membersCount": 1, "starsPerMember": 12, "median": 0  },
+                { "name": nameB, "stars": 12, "membersCount": 3, "starsPerMember": 4, "median": 0  },
+                { "name": nameC, "stars": 12, "membersCount": 4, "starsPerMember": 3, "median": 0  },
+                { "name": nameD, "stars": 12, "membersCount": 2, "starsPerMember": 6, "median": 0  }
             ],
         };
 
@@ -46,10 +46,10 @@ describe("TextStatsPresenter", () => {
         const yearStats = {
             year: 2018,
             rivals: [
-                { "name": nameA, "stars": 0, "membersCount": 1, "starsPerMember": 0 },
-                { "name": nameB, "stars": 90, "membersCount": 2, "starsPerMember": 45 },
-                { "name": nameC, "stars": 30, "membersCount": 3, "starsPerMember": 10 },
-                { "name": nameD, "stars": 60, "membersCount": 4, "starsPerMember": 15 },
+                { "name": nameA, "stars": 0, "membersCount": 1, "starsPerMember": 0, "median": 0 },
+                { "name": nameB, "stars": 90, "membersCount": 2, "starsPerMember": 45, "median": 0 },
+                { "name": nameC, "stars": 30, "membersCount": 3, "starsPerMember": 10, "median": 0 },
+                { "name": nameD, "stars": 60, "membersCount": 4, "starsPerMember": 15, "median": 0 },
             ],
         };
 

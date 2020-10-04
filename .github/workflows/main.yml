@@ -1,0 +1,12 @@
+name: "Continuous Integration"
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: Install
+      run: npm install
+    - name: Run tests
+      run: npm test
