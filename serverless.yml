@@ -2,7 +2,7 @@ service: adventofcode-rivals
 
 provider:
   name: aws
-  runtime: nodejs8.10
+  runtime: nodejs12.x
   stage: dev
   region: eu-west-2
   iamRoleStatements:
